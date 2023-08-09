@@ -1,0 +1,41 @@
+{
+  "id": "regular-offer-paris",
+  "title": "Offer #1",
+  "description": "Regular Paris offer description.",
+  "type": "house",
+  "price": 929,
+  "images": [
+    "https://13.design.pages.academy/static/hotel/10.jpg",
+    "https://13.design.pages.academy/static/hotel/8.jpg",
+    "https://13.design.pages.academy/static/hotel/16.jpg",
+    "https://13.design.pages.academy/static/hotel/4.jpg",
+    "https://13.design.pages.academy/static/hotel/5.jpg",
+    "https://13.design.pages.academy/static/hotel/20.jpg"
+  ],
+  "city": {
+    "name": "Paris",
+    "location": {
+      "latitude": 48.85661,
+      "longitude": 2.351499,
+      "zoom": 13
+    }
+  },
+  "location": {
+    "latitude": 48.868610000000004,
+    "longitude": 2.342499,
+    "zoom": 16
+  },
+  "goods": [
+    "Air conditioning"
+  ],
+  "host": {
+    "isPro": false,
+    "name": "Angelina",
+    "avatarUrl": "https://13.design.pages.academy/static/host/avatar-angelina.jpg"
+  },
+  "isPremium": false,
+  "isFavorite": false,
+  "rating": 2.1,
+  "bedrooms": 1,
+  "maxAdults": 1
+}

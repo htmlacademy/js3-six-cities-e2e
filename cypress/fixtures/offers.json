@@ -1,0 +1,140 @@
+[
+  {
+    "id": "regular-offer-paris",
+    "title": "Offer #1",
+    "type": "house",
+    "price": 929,
+    "previewImage": "https://13.design.pages.academy/static/hotel/10.jpg",
+    "city": {
+      "name": "Paris",
+      "location": {
+        "latitude": 48.85661,
+        "longitude": 2.351499,
+        "zoom": 13
+      }
+    },
+    "location": {
+      "latitude": 48.868610000000004,
+      "longitude": 2.342499,
+      "zoom": 16
+    },
+    "isFavorite": false,
+    "isPremium": false,
+    "rating": 2.1
+  },
+  {
+    "id": "premium-offer-paris",
+    "title": "Offer #2",
+    "type": "room",
+    "price": 137,
+    "previewImage": "https://13.design.pages.academy/static/hotel/13.jpg",
+    "city": {
+      "name": "Paris",
+      "location": {
+        "latitude": 48.85661,
+        "longitude": 2.351499,
+        "zoom": 13
+      }
+    },
+    "location": {
+      "latitude": 48.858610000000006,
+      "longitude": 2.330499,
+      "zoom": 16
+    },
+    "isFavorite": false,
+    "isPremium": true,
+    "rating": 4.9
+  },
+  {
+    "id": "regular-offer-cologne",
+    "title": "Offer #3",
+    "type": "apartment",
+    "price": 271,
+    "previewImage": "https://13.design.pages.academy/static/hotel/11.jpg",
+    "city": {
+      "name": "Cologne",
+      "location": {
+        "latitude": 50.938361,
+        "longitude": 6.959974,
+        "zoom": 13
+      }
+    },
+    "location": {
+      "latitude": 50.950361,
+      "longitude": 6.961974,
+      "zoom": 16
+    },
+    "isFavorite": false,
+    "isPremium": false,
+    "rating": 5
+  },
+  {
+    "id": "premium-offer-amsterdam",
+    "title": "Offer #4",
+    "type": "house",
+    "price": 633,
+    "previewImage": "https://13.design.pages.academy/static/hotel/8.jpg",
+    "city": {
+      "name": "Amsterdam",
+      "location": {
+        "latitude": 52.37454,
+        "longitude": 4.897976,
+        "zoom": 13
+      }
+    },
+    "location": {
+      "latitude": 52.36554,
+      "longitude": 4.911976,
+      "zoom": 16
+    },
+    "isFavorite": false,
+    "isPremium": true,
+    "rating": 3.3
+  },
+  {
+    "id": "regular-offer-hamburg",
+    "title": "Offer #5",
+    "type": "hotel",
+    "price": 401,
+    "previewImage": "https://13.design.pages.academy/static/hotel/17.jpg",
+    "city": {
+      "name": "Hamburg",
+      "location": {
+        "latitude": 53.550341,
+        "longitude": 10.000654,
+        "zoom": 13
+      }
+    },
+    "location": {
+      "latitude": 53.528341000000005,
+      "longitude": 10.018654000000002,
+      "zoom": 16
+    },
+    "isFavorite": false,
+    "isPremium": true,
+    "rating": 4
+  },
+  {
+    "id": "regular-offer-dusseldorf",
+    "title": "Offer #6",
+    "type": "room",
+    "price": 236,
+    "previewImage": "https://13.design.pages.academy/static/hotel/16.jpg",
+    "city": {
+      "name": "Dusseldorf",
+      "location": {
+        "latitude": 51.225402,
+        "longitude": 6.776314,
+        "zoom": 13
+      }
+    },
+    "location": {
+      "latitude": 51.225402,
+      "longitude": 6.784314,
+      "zoom": 16
+    },
+    "isFavorite": false,
+    "isPremium": false,
+    "rating": 1.8
+  }
+]

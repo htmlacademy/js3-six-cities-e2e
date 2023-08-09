@@ -1,0 +1,23 @@
+{
+  "id": "regular-offer-cologne",
+  "title": "Offer #3",
+  "type": "apartment",
+  "price": 271,
+  "previewImage": "https://13.design.pages.academy/static/hotel/11.jpg",
+  "city": {
+    "name": "Cologne",
+    "location": {
+      "latitude": 50.938361,
+      "longitude": 6.959974,
+      "zoom": 13
+    }
+  },
+  "location": {
+    "latitude": 50.950361,
+    "longitude": 6.961974,
+    "zoom": 16
+  },
+  "isFavorite": false,
+  "isPremium": false,
+  "rating": 5
+}

@@ -1,0 +1,42 @@
+{
+  "id": "premium-offer-paris",
+  "title": "Offer #2",
+  "description": "Premium Paris offer description.",
+  "type": "room",
+  "price": 236,
+  "images": [
+    "https://13.design.pages.academy/static/hotel/13.jpg",
+    "https://13.design.pages.academy/static/hotel/8.jpg",
+    "https://13.design.pages.academy/static/hotel/16.jpg",
+    "https://13.design.pages.academy/static/hotel/4.jpg",
+    "https://13.design.pages.academy/static/hotel/5.jpg",
+    "https://13.design.pages.academy/static/hotel/20.jpg"
+  ],
+  "city": {
+    "name": "Paris",
+    "location": {
+      "latitude": 48.85661,
+      "longitude": 2.351499,
+      "zoom": 13
+    }
+  },
+  "location": {
+    "latitude": 48.858610000000006,
+    "longitude": 2.330499,
+    "zoom": 16
+  },
+  "goods": [
+    "Air conditioning",
+    "Fridge"
+  ],
+  "host": {
+    "isPro": true,
+    "name": "Angelina",
+    "avatarUrl": "https://13.design.pages.academy/static/host/avatar-angelina.jpg"
+  },
+  "isPremium": true,
+  "isFavorite": false,
+  "rating": 4.9,
+  "bedrooms": 2,
+  "maxAdults": 2
+}
