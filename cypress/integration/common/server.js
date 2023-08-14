@@ -241,8 +241,9 @@ Given(/^отзыв отправляется с задержкой$/, () => {
     method: 'POST',
     url: firstOfferComentsUrl
   }, {
-    statusCode: 200,
+    statusCode: 201,
     delayMs: 500,
+    fixture: 'new-review.json'
   })
     .as('postReview');
 });
