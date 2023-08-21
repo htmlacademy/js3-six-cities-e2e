@@ -47,7 +47,7 @@ Feature: 1.1.1.1 Главная страница. Список предложе�
     Then элемент '.cities__card:nth-child(2) .place-card__mark' видим
     Then элемент '.cities__card:nth-child(2) .place-card__price-value' содержит текст '€137'
     Then элемент '.cities__card:nth-child(2) .place-card__name' содержит текст 'Offer #2'
-    Then элемент '.cities__card:nth-child(2) .place-card__type' содержит текст 'Room'
+    Then элемент '.cities__card:nth-child(2) .place-card__type' содержит текст 'Apartment'
     Then элемент '.cities__card:nth-child(2) .place-card__stars span:nth-child(1)' имеет ширину '73'
 
   Scenario: Клик по заголовку карточки выполняет переход на страницу с подробной информацией о предложении

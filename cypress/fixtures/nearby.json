@@ -71,7 +71,7 @@
   {
     "id": "regular-offer-dusseldorf",
     "title": "Test Offer",
-    "type": "room",
+    "type": "apartment",
     "price": 236,
     "previewImage": "https://13.design.pages.academy/static/hotel/16.jpg",
     "city": {

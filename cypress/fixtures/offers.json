@@ -25,7 +25,7 @@
   {
     "id": "premium-offer-paris",
     "title": "Offer #2",
-    "type": "room",
+    "type": "apartment",
     "price": 137,
     "previewImage": "https://13.design.pages.academy/static/hotel/13.jpg",
     "city": {
@@ -117,7 +117,7 @@
   {
     "id": "regular-offer-dusseldorf",
     "title": "Offer #6",
-    "type": "room",
+    "type": "apartment",
     "price": 236,
     "previewImage": "https://13.design.pages.academy/static/hotel/16.jpg",
     "city": {
