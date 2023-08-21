@@ -45,7 +45,7 @@ When(/^прокручиваю страницу$/, () => {
 let markerRect;
 Given(/^запоминаю положение оранжевого маркера$/, () => {
   cy
-    .get('.map [src="/img/pin-active.svg"]')
+    .get('.map [src$="pin-active.svg"]')
     .then(($marker) => {
       markerRect = $marker[0].getBoundingClientRect();
     });
@@ -53,7 +53,7 @@ Given(/^запоминаю положение оранжевого маркер�
 
 Then(/^положение оранжевого маркера не изменилось$/, () => {
   cy
-    .get('.map [src="/img/pin-active.svg"]')
+    .get('.map [src$="pin-active.svg"]')
     .then(($marker) => $marker[0].getBoundingClientRect())
     .then(({x, y}) => {
       expect(x).to.eq(markerRect.x);
@@ -64,7 +64,7 @@ Then(/^положение оранжевого маркера не измени�
 
 Then(/^положение оранжевого маркера изменилось$/, () => {
   cy
-    .get('.map [src="/img/pin-active.svg"]')
+    .get('.map [src$="pin-active.svg"]')
     .then(($marker) => $marker[0].getBoundingClientRect())
     .then(({x, y}) => {
       expect(x !== markerRect.x || y !== markerRect.y).to.eq(true);
