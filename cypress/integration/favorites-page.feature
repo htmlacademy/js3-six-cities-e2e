@@ -44,6 +44,8 @@ Feature: 1.1.2 Страница Favorites
 
   Scenario: Избранные предложения отсутствуют
     Given сервер отдаёт пустой список избранных предложений
+    When нахожусь на странице Favorites
+    When запрос на получение данных об избранных предложениях завершён
     Then элемент '.page--favorites-empty' видим
     Then элемент '.page__main--favorites-empty' видим
     Then элемент '.favorites--empty' видим
