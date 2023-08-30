@@ -43,6 +43,7 @@ Feature: 1.1.2 Страница предложения
     Then элемент '.offer__image-wrapper:nth-child(4) .offer__image' содержит изображение 'https://13.design.pages.academy/static/hotel/4.jpg'
     Then элемент '.offer__image-wrapper:nth-child(5) .offer__image' содержит изображение 'https://13.design.pages.academy/static/hotel/5.jpg'
     Then элемент '.offer__image-wrapper:nth-child(6) .offer__image' содержит изображение 'https://13.design.pages.academy/static/hotel/20.jpg'
+    Then элемента '.offer__image-wrapper:nth-child(7) .offer__image' нет на странице
     Then элемент '.offer__name' содержит текст 'Offer #2'
     Then элемент '.offer__description' содержит текст 'Premium Paris offer description.'
     Then элемент '.offer__mark' видим
