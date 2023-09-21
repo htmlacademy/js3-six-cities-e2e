@@ -16,6 +16,11 @@ const OfferId = {
   NONEXISTENT: 'test',
 };
 
+const Token = {
+  KEY: 'six-cities-token',
+  VALUE: 'token'
+}
+
 const firstOfferUrl = `${APIRoute.OFFERS}/${OfferId.FIRST}`;
 const firstOfferComentsUrl = `${APIRoute.COMMENTS}/${OfferId.FIRST}`;
 const firstOfferNearbyUrl = `${firstOfferUrl}${APIRoute.NEARBY}`;
@@ -174,6 +179,7 @@ Given(/^пользователь авторизован$/, () => {
   cy.intercept('GET', APIRoute.LOGIN, {
     fixture: 'user.json',
   }).as('getLogin');
+  window.localStorage.setItem(Token.KEY, Token.VALUE);
 });
 
 When(/^запрос на получение данных об авторизации завершён$/, () => {
