@@ -13,6 +13,7 @@ const OfferId = {
   FIRST: 'regular-offer-paris',
   SECOND: 'premium-offer-paris',
   THIRD: 'regular-offer-cologne',
+  NONEXISTENT: 'test',
 };
 
 const firstOfferUrl = `${APIRoute.OFFERS}/${OfferId.FIRST}`;
@@ -26,6 +27,11 @@ const secondOfferNearbyUrl = `${secondOfferUrl}${APIRoute.NEARBY}`;
 const secondOfferFavoritesUrl = `${APIRoute.FAVORITES}/${OfferId.SECOND}`;
 
 const thirdOfferFavoritesUrl = `${APIRoute.FAVORITES}/${OfferId.THIRD}`;
+
+const nonexistentOfferUrl = `${APIRoute.OFFERS}/${OfferId.NONEXISTENT}`;
+const nonexistentComentsUrl = `${APIRoute.COMMENTS}/${OfferId.NONEXISTENT}`;
+const nonexistentNearbyUrl = `${nonexistentOfferUrl}${APIRoute.NEARBY}`;
+
 
 Given(/^подменяю данные о предложениях$/, () => {
   cy.intercept('GET', APIRoute.OFFERS, {
@@ -90,6 +96,26 @@ Given(/^подменяю данные о премиальном тестовом
   ).as('getComments');
 });
 
+Given(/^подменяю данные о несуществующем тестовом предложении$/, () => {
+  cy.intercept(
+    'GET',
+    nonexistentOfferUrl,
+    { statusCode: 404 }
+  ).as('getPremiumOffer');
+
+  cy.intercept(
+    'GET',
+    nonexistentNearbyUrl,
+    { statusCode: 404 }
+  ).as('getNearby');
+
+  cy.intercept(
+    'GET',
+    nonexistentComentsUrl,
+    { statusCode: 404 }
+  ).as('getComments');
+});
+
 When(/^запрос на получение данных об обычном тестовом предложении завершён$/, () => {
   cy.wait(['@getRegularOffer', '@getNearby', '@getComments']);
 });
@@ -97,6 +123,7 @@ When(/^запрос на получение данных об обычном т�
 When(/^запрос на получение данных о премиальном тестовом предложении завершён$/, () => {
   cy.wait(['@getPremiumOffer', '@getNearby', '@getComments']);
 });
+
 
 Given(/^подменяю данные об избранных предложениях$/, () => {
   cy.intercept({

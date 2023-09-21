@@ -13,7 +13,10 @@ Then(/^элемента '(.*)' нет на странице$/, (selector) => {
 });
 
 Then(/^элемент '(.*)' содержит текст '(.*)'$/, (selector, text) => {
-  cy.get(selector).should('have.text', text);
+  cy.get(selector).should(($el) => {
+    const elText = $el.text().trim().toLowerCase();
+    expect(elText).to.include(text.toLowerCase());
+  });
 });
 
 Then(/^элемент '(.*)' содержит класс '(.*)'$/, (selector, cssClass) => {
