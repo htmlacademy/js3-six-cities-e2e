@@ -47,7 +47,7 @@ Feature: 1.1.2 Страница предложения
     Then элемент '.offer__name' содержит текст 'Offer #2'
     Then элемент '.offer__description' содержит текст 'Premium Paris offer description.'
     Then элемент '.offer__mark' видим
-    Then элемент '.offer__feature--entire' содержит текст 'Apartment'
+    Then элемент '.offer__feature--entire' содержит текст 'Room'
     Then элемент '.offer__rating-value' содержит текст '4.9'
     Then элемент '.offer__stars span:nth-child(1)' имеет ширину '147'
     Then элемент '.offer__feature--bedrooms' содержит текст '2 Bedrooms'

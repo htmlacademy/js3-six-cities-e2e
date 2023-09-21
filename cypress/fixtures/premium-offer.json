@@ -2,7 +2,7 @@
   "id": "premium-offer-paris",
   "title": "Offer #2",
   "description": "Premium Paris offer description.",
-  "type": "apartment",
+  "type": "room",
   "price": 236,
   "images": [
     "https://13.design.pages.academy/static/hotel/13.jpg",
