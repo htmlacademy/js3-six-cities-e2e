@@ -43,3 +43,20 @@ Feature: 1.1.1 Главная страница
     When кликаю на элемент '.cities__card:nth-child(1) .place-card__bookmark-button'
     When запрос на удаление из избранного завершён
     Then элемент '.cities__card:nth-child(1) .place-card__bookmark-button' не содержит класс 'place-card__bookmark-button--active'
+
+  Scenario: Избранное на главной странице работает корректно
+    Given пользователь авторизован
+    Given подменяю данные об избранных предложениях
+    Given подменяю запрос на добавление в избранное
+    When нахожусь на странице Main
+    When запрос на получение данных об авторизации завершён
+    When запрос на получение данных о предложениях завершён
+    Then элемент '.cities__card:nth-child(1) .place-card__bookmark-button' не содержит класс 'place-card__bookmark-button--active'
+    When кликаю на элемент '.cities__card:nth-child(1) .place-card__bookmark-button'
+    When запрос на добавление в избранное завершён
+    Then элемент '.cities__card:nth-child(1) .place-card__bookmark-button' содержит класс 'place-card__bookmark-button--active'
+
+    # Переключаем город для проверки корректности отображения
+    When кликаю на элемент '.locations__item:nth-child(2)'
+    When кликаю на элемент '.locations__item:nth-child(1)'
+    Then элемент '.cities__card:nth-child(1) .place-card__bookmark-button' содержит класс 'place-card__bookmark-button--active'
