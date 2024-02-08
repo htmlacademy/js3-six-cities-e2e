@@ -8,7 +8,7 @@ module.exports = defineConfig({
     excludeSpecPattern: '*.js',
     specPattern: 'cypress/integration/**/*.{feature,features}',
     baseUrl: 'http://localhost:5173',
-    baseApiUrl: 'https://14.design.pages.academy/six-cities',
+    baseApiUrl: 'https://15.design.htmlacademy.pro/six-cities',
     viewportHeight: 1000,
     viewportWidth: 1280,
     experimentalWebKitSupport: true,
